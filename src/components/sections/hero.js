@@ -12,9 +12,12 @@ const StyledHeroSection = styled.section`
   align-items: flex-start;
   min-height: 100vh;
   padding: 0;
-  @media (max-width: 480px) and (min-height: 700px) {
+
+  @media (max-width: 768px) {
     padding-bottom: 10vh;
+    max-width: 80vw;
   }
+
   h1 {
     margin: 0 0 30px 4px;
     color: var(--green);
@@ -25,14 +28,22 @@ const StyledHeroSection = styled.section`
       margin: 0 0 20px 2px;
     }
   }
+  h2 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: clamp(40px, 8vw, 60px);
+  }
   h3 {
     margin-top: 10px;
     color: var(--slate);
     line-height: 0.9;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: clamp(40px, 7vw, 50px);
   }
   p {
     margin: 20px 0 0;
-    max-width: 500px;
+    max-width: 700px;
     color: var(light-slate);
   }
   .email-link {
@@ -65,7 +76,7 @@ const Hero = () => {
     <>
       <StyledHeroSection>
         <h1>Hi. my name is</h1>
-        <h2 className="big-heading">Jose M. Dominguez</h2>
+        <h2>Jose M. Dominguez</h2>
         <h3 className="big-heading">
           First I drink coffee, then I build things.
         </h3>
