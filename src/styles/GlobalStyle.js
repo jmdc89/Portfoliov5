@@ -18,13 +18,13 @@ const Globals = createGlobalStyle`
         --green: #64ffda;
         --green-tint: rgba(100, 255, 218, 0.1);
 
-        --fz-xxs: 12px;
-        --fz-xs: 13px;
-        --fz-sm: 14px;
-        --fz-md: 16px;
-        --fz-lg: 18px;
-        --fz-xl: 20px;
-        --fz-xxl: 22px;
+        --fz-xxs: 14px;
+        --fz-xs: 15px;
+        --fz-sm: 16px;
+        --fz-md: 18px;
+        --fz-lg: 20px;
+        --fz-xl: 22px;
+        --fz-xxl: 24px;
         --fz-heading: 32px;
 
         --border-radius: 4px;
@@ -35,7 +35,7 @@ const Globals = createGlobalStyle`
         --tab-width: 120px;
 
         --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
-        --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+        --transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
 
         --hamburger-width: 30px;
 

@@ -96,13 +96,15 @@ const StyledSidebar = styled.aside`
     bottom: 0;
     right: 0;
     padding: 50px 10px;
-    width: min(75vw, 400px);
+    /* width: min(75vw, 400px); */
+    width: 100vw;
     height: 100vh;
     outline: 0;
     background-color: var(--light-navy);
     box-shadow: -10px 0px 30px -15px var(--navy-shadow);
     z-index: 9;
-    transform: translateX(${(props) => (props.menuOpen ? 0 : 100)}vw);
+    /* transform: translateX(${(props) => (props.menuOpen ? 0 : 100)}vw); */
+    transform: translateX(${(props) => (props.menuOpen ? 0 : -100)}vw);
     visibility: ${(props) => (props.menuOpen ? "visible" : "hidden")};
     transition: var(--transition);
   }
@@ -113,7 +115,7 @@ const StyledSidebar = styled.aside`
     width: 100%;
     flex-direction: column;
     color: var(--lightest-slate);
-    font-family: var(--font-mono);
+    /* font-family: var(--font-mono); */
     text-align: center;
   }
   ol {
@@ -183,7 +185,7 @@ const StyledSidebar = styled.aside`
 `;
 
 const Menu = () => {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
