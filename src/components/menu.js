@@ -18,7 +18,9 @@ const StyledHamburgerButton = styled.button`
     align-items: center;
     position: relative;
     z-index: 10;
-    margin-right: -15px;
+    /* margin-right: -15px; */
+    margin-right: 15px;
+    margin-top: 15px;
     padding: 15px;
     border: 0;
     background-color: transparent;
@@ -27,6 +29,7 @@ const StyledHamburgerButton = styled.button`
     transition-timing-function: linear;
     transition-duration: 0.15s;
     transition-property: opacity, filter;
+    float: right;
   }
   .ham-box {
     display: inline-block;
@@ -180,14 +183,22 @@ const StyledSidebar = styled.aside`
 `;
 
 const Menu = () => {
+  const [menuOpen, setMenuOpen] = useState(true);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
   return (
     <StyledMenu>
-      <StyledHamburgerButton>
+      <StyledHamburgerButton onClick={toggleMenu} menuOpen={menuOpen}>
         <div className="ham-box">
           <div className="ham-box-inner" />
         </div>
       </StyledHamburgerButton>
-      <StyledSidebar>
+      <StyledSidebar
+        menuOpen={menuOpen}
+        aria-hidden={!menuOpen}
+        tabIndex={menuOpen ? 1 : -1}
+      >
         <nav>
           <ol>
             {navLinks.map(({ url, name }, i) => (
@@ -207,3 +218,5 @@ const Menu = () => {
     </StyledMenu>
   );
 };
+
+export default Menu;

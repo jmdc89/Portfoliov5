@@ -21,6 +21,10 @@ const StyledHeader = styled.header`
   @media (max-width: 768px) {
     padding: 0 25px;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const StyledNav = styled.nav`

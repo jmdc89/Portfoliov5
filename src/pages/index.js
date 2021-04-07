@@ -1,13 +1,14 @@
 import React from "react";
 import Globals from "../styles/GlobalStyle";
 import Nav from "../components/nav";
+import Menu from "../components/menu";
 
 const IndexPage = () => {
   return (
     <>
       <Globals />
-      <h1>hello from index</h1>
       <Nav />
+      <Menu />
     </>
   );
 };
