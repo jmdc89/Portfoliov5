@@ -178,3 +178,32 @@ const StyledSidebar = styled.aside`
     width: max-content;
   }
 `;
+
+const Menu = () => {
+  return (
+    <StyledMenu>
+      <StyledHamburgerButton>
+        <div className="ham-box">
+          <div className="ham-box-inner" />
+        </div>
+      </StyledHamburgerButton>
+      <StyledSidebar>
+        <nav>
+          <ol>
+            {navLinks.map(({ url, name }, i) => (
+              <li key={i}>
+                <Link to={url} onClick={() => setMenuOpen(false)}>
+                  {name}
+                </Link>
+              </li>
+            ))}
+          </ol>
+
+          <a href="/resume.pdf" className="resume-link">
+            Resume
+          </a>
+        </nav>
+      </StyledSidebar>
+    </StyledMenu>
+  );
+};
