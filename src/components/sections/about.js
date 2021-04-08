@@ -3,13 +3,15 @@ import styled from "styled-components";
 import { StaticImage } from "gatsby-plugin-image";
 
 const StyledAboutSection = styled.section`
-  max-width: 900px;
+  max-width: 1000px;
   .inner {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-gap: 50px;
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       display: block;
+      max-width: 80vw;
+      margin-left: 10vw;
     }
   }
 `;
@@ -40,6 +42,70 @@ const StyledText = styled.div`
   }
 `;
 
+const StyledPic = styled.div`
+  position: relative;
+  max-width: 300px;
+  @media (max-width: 768px) {
+    margin: 50px auto 0;
+    width: 70%;
+  }
+  .wrapper {
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+    &:hover,
+    &:focus {
+      box-shadow: 0 20px 30px -15px var(--navy-shadow);
+    }
+    display: block;
+    position: relative;
+    width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--green);
+    &:hover,
+    &:focus {
+      background: transparent;
+      outline: 0;
+      &:after {
+        top: 15px;
+        left: 15px;
+      }
+      .img {
+        filter: none;
+        mix-blend-mode: normal;
+      }
+    }
+    .img {
+      position: relative;
+      border-radius: var(--border-radius);
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1);
+      transition: var(--transition);
+    }
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+    }
+    &:before {
+      top: 0;
+      left: 0;
+      background-color: var(--navy);
+      mix-blend-mode: screen;
+    }
+    &:after {
+      border: 2px solid var(--green);
+      top: 20px;
+      left: 20px;
+      z-index: -1;
+    }
+  }
+`;
+
 const About = () => {
   const skills = [
     "JavaScript (ES6+)",
@@ -51,7 +117,7 @@ const About = () => {
   ];
 
   return (
-    <StyledAboutSection id="about" ref={revealContainer}>
+    <StyledAboutSection id="about">
       <h2 className="numbered-heading">About Me</h2>
 
       <div className="inner">
@@ -65,7 +131,7 @@ const About = () => {
             </p>
 
             <p>
-              Fast-forward to today, and I've had the privilege of working at{" "}
+              I've had the privilege of working at{" "}
               <a href="https://www.faac.unesp.br/#!/cadep/">
                 Center for Advanced Product Development (Brazil)
               </a>
@@ -73,7 +139,10 @@ const About = () => {
               <a href="https://sagradafamilia.org/es/">
                 the Sagrada Familia Temple (Barcelona)
               </a>
-              . My main focus these days is combine my knowledge on parametric
+              .
+            </p>
+            <p>
+              My main focus these days is combine my knowledge on parametric
               modeling and digital fabrication with the creation of innovative
               digital solutions through web development.
             </p>
@@ -88,7 +157,7 @@ const About = () => {
 
         <StyledPic>
           <div className="wrapper">
-            <StaticImage src="../../images/me.PNG" alt="me" />
+            <StaticImage src="../../images/me.PNG" alt="me" className="img" />
           </div>
         </StyledPic>
       </div>
