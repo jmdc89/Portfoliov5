@@ -83,9 +83,9 @@ const Hero = () => {
         </h3>
         <p>
           I'm a Spain-based architect and software developer with 10 years of
-          professional experience in digital fabrication, parametric modeling
-          and complex geometry. Currently, I´m focused on designing and building
-          exceptional digital experiences.
+          experience in digital fabrication, parametric modeling and complex
+          geometry. Currently, I´m focused on designing and building exceptional
+          digital experiences.
         </p>
         <a href={`mailto:${email}`} className="email-link">
           Get In Touch
