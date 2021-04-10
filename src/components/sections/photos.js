@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
 import Slider from "react-slick";
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -48,7 +48,7 @@ const Photos = () => {
   return (
     <>
       {planos.map((plano, index) => {
-        return <StaticImage src={plano.url} alt={plano.name} />;
+        return <GatsbyImage src={plano.url} alt={plano.name} />;
       })}
     </>
   );
