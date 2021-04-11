@@ -15,7 +15,8 @@ const Globals = createGlobalStyle`
         --light-slate: #a8b2d1;
         --lightest-slate: #ccd6f6;
         --white: #e6f1ff;
-        --green: #64ffda;
+        /* --green: #64ffda; */
+           --green: #ffbc64;
         --green-tint: rgba(100, 255, 218, 0.1);
 
         --fz-xxs: 12px;
@@ -195,6 +196,21 @@ const Globals = createGlobalStyle`
   .medium-heading {
     margin: 0;
     font-size: clamp(40px, 8vw, 60px);
+  }
+
+  .number-heading {
+    position: relative;
+      bottom: 4px;
+      margin-right: 10px;
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+      font-weight: 400;
+
+      @media (max-width: 480px) {
+        margin-bottom: -3px;
+        margin-right: 5px;
+      }
   }
 
   .numbered-heading {
