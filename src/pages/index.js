@@ -5,6 +5,7 @@ import Menu from "../components/menu";
 import Hero from "../components/sections/hero";
 import About from "../components/sections/about";
 import Photos from "../components/sections/photos";
+import Featured from "../components/sections/featured";
 
 const IndexPage = () => {
   return (
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <Hero />
       <About />
       <Photos />
+      <Featured />
     </>
   );
 };
