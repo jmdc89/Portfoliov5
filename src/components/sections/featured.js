@@ -285,6 +285,7 @@ const StyledProject = styled.li`
     .img {
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
+      height: 400px;
       filter: grayscale(100%) contrast(1) brightness(90%);
       @media (max-width: 768px) {
         object-fit: cover;
@@ -306,11 +307,68 @@ const Featured = () => {
           <div>
             <p className="project-overline">Featured Project</p>
             <h3 className="project-title">
+              <a>Netflix Clone</a>
+            </h3>
+          </div>
+
+          <div className="project-description">
+            <p>
+              This application (a Netflix clone) was built using React (Custom
+              Hooks, Context), Firebase & Styled Components. I have built the
+              following pages within this application: sign in, sign up, browse
+              & lastly the homepage. There are four different pages, some using
+              protected routes with auth listeners. Firebase firestore handles
+              all the data and that data is retrieved using a custom hook;
+              authentication is used on all pages, which is handled by Firebase
+              as well.
+            </p>
+
+            <ul className="project-tech-list">
+              <li>React</li>
+              <li>Styled Components</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            <a
+              aria-label="GitHub Link"
+              href="https://github.com/jmdc89/netflixClone"
+            >
+              <Icon name="GitHub" />
+            </a>
+            <a
+              aria-label="External Link"
+              className="external"
+              href="https://netflixcloneui.netlify.app/"
+            >
+              <Icon name="External" />
+            </a>
+          </div>
+        </div>
+
+        <div className="project-image">
+          <a>
+            <StaticImage
+              src="../../images/projects/netflixclone.JPG"
+              alt="Image 1"
+              className="img"
+            />
+          </a>
+        </div>
+      </StyledProject>
+
+      <StyledProject>
+        <div className="project-content">
+          <div>
+            <p className="project-overline">Featured Project</p>
+            <h3 className="project-title">
               <a>title</a>
             </h3>
           </div>
 
           <div className="project-description">
+            sssssssssssssssssssssssssssssss
             <ul className="project-tech-list">
               <li>tech1</li>
               <li>tech2</li>
