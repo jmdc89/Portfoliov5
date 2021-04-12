@@ -483,6 +483,54 @@ const Featured = () => {
         </div>
       </StyledProject>
 
+      <StyledProject>
+        <div className="project-content">
+          <div>
+            <p className="project-overline">Featured Project</p>
+            <h3 className="project-title">
+              <a>Tesla UI Clone</a>
+            </h3>
+          </div>
+
+          <div className="project-description">
+            This application (a Tesla Homepage UI clone) was built using React,
+            TypeScript and Styled Components. The focus was to replicate the
+            scroll transition functionality.
+            <ul className="project-tech-list">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Styled Components</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            <a
+              aria-label="GitHub Link"
+              href="https://github.com/jmdc89/TeslaReact"
+            >
+              <Icon name="GitHub" />
+            </a>
+            <a
+              aria-label="External Link"
+              className="external"
+              href="https://teslauiclone.netlify.app/"
+            >
+              <Icon name="External" />
+            </a>
+          </div>
+        </div>
+
+        <div className="project-image">
+          <a>
+            <StaticImage
+              src="../../images/projects/teslauiclone.JPG"
+              alt="Tesla Ui Clone"
+              className="img"
+            />
+          </a>
+        </div>
+      </StyledProject>
+
       {/* </StyledProjectsGrid> */}
     </section>
   );
