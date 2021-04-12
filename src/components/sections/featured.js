@@ -531,6 +531,52 @@ const Featured = () => {
         </div>
       </StyledProject>
 
+      <StyledProject>
+        <div className="project-content">
+          <div>
+            <p className="project-overline">Featured Project</p>
+            <h3 className="project-title">
+              <a>Portfolio v1</a>
+            </h3>
+          </div>
+
+          <div className="project-description">
+            First iteration of my personal website built with Gatsby and Strapi.
+            <ul className="project-tech-list">
+              <li>Gatsby</li>
+              <li>Strapi</li>
+              <li>Styled Components</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            <a
+              aria-label="GitHub Link"
+              href="https://github.com/jmdc89/gatsby-strapi-Portfolio-2021"
+            >
+              <Icon name="GitHub" />
+            </a>
+            <a
+              aria-label="External Link"
+              className="external"
+              href="https://portwebsitev1.netlify.app/"
+            >
+              <Icon name="External" />
+            </a>
+          </div>
+        </div>
+
+        <div className="project-image">
+          <a>
+            <StaticImage
+              src="../../images/projects/portfoliov1.JPG"
+              alt="Tesla Ui Clone"
+              className="img"
+            />
+          </a>
+        </div>
+      </StyledProject>
+
       {/* </StyledProjectsGrid> */}
     </section>
   );
