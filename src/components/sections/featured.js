@@ -433,6 +433,56 @@ const Featured = () => {
           </a>
         </div>
       </StyledProject>
+
+      <StyledProject>
+        <div className="project-content">
+          <div>
+            <p className="project-overline">Featured Project</p>
+            <h3 className="project-title">
+              <a>React microProjects</a>
+            </h3>
+          </div>
+
+          <div className="project-description">
+            These microprojects have been developed using React (useState,
+            useEffect, Conditional Rendering, Forms, useRef, useContext,
+            useReducer, React Router and useCallback)
+            <ul className="project-tech-list">
+              <li>React</li>
+              <li>Redux</li>
+              <li>Bootstrap</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            <a
+              aria-label="GitHub Link"
+              href="https://github.com/jmdc89/reactProjects"
+            >
+              <Icon name="GitHub" />
+            </a>
+            <a
+              aria-label="External Link"
+              className="external"
+              href="https://react-microprojects.netlify.app/"
+            >
+              <Icon name="External" />
+            </a>
+          </div>
+        </div>
+
+        <div className="project-image">
+          <a>
+            <StaticImage
+              src="../../images/projects/microProjects.JPG"
+              alt="micro projects"
+              className="img"
+            />
+          </a>
+        </div>
+      </StyledProject>
+
       {/* </StyledProjectsGrid> */}
     </section>
   );
