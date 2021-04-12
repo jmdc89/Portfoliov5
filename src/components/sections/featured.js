@@ -1,17 +1,17 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../components/icons";
 import { StaticImage } from "gatsby-plugin-image";
 
-const StyledProjectsGrid = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  a {
-    position: relative;
-    z-index: 1;
-  }
-`;
+// const StyledProjectsGrid = styled.ul`
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+//   a {
+//     position: relative;
+//     z-index: 1;
+//   }
+// `;
 
 const StyledProject = styled.li`
   position: relative;
@@ -334,7 +334,7 @@ const Featured = () => {
           <div>
             <p className="project-overline">Featured Project</p>
             <h3 className="project-title">
-              <a>Netflix Clone</a>
+              <a href="https://netflixcloneui.netlify.app/">Netflix Clone</a>
             </h3>
           </div>
 
@@ -390,7 +390,7 @@ const Featured = () => {
           <div>
             <p className="project-overline">Featured Project</p>
             <h3 className="project-title">
-              <a>Robot Picker</a>
+              <a href="https://talerobot.netlify.app/">Robot Picker</a>
             </h3>
           </div>
 
@@ -439,7 +439,9 @@ const Featured = () => {
           <div>
             <p className="project-overline">Featured Project</p>
             <h3 className="project-title">
-              <a>React microProjects</a>
+              <a href="https://react-microprojects.netlify.app/">
+                React microProjects
+              </a>
             </h3>
           </div>
 
@@ -488,7 +490,7 @@ const Featured = () => {
           <div>
             <p className="project-overline">Featured Project</p>
             <h3 className="project-title">
-              <a>Tesla UI Clone</a>
+              <a href="https://teslauiclone.netlify.app/">Tesla UI Clone</a>
             </h3>
           </div>
 
@@ -536,7 +538,7 @@ const Featured = () => {
           <div>
             <p className="project-overline">Featured Project</p>
             <h3 className="project-title">
-              <a>Portfolio v1</a>
+              <a href="https://portwebsitev1.netlify.app/">Portfolio v1</a>
             </h3>
           </div>
 

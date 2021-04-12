@@ -4,7 +4,7 @@ import Nav from "../components/nav";
 import Menu from "../components/menu";
 import Hero from "../components/sections/hero";
 import About from "../components/sections/about";
-import Photos from "../components/sections/photos";
+// import Photos from "../components/sections/photos";
 import Featured from "../components/sections/featured";
 import Contact from "../components/sections/contact";
 
@@ -16,7 +16,7 @@ const IndexPage = () => {
       <Menu />
       <Hero />
       <About />
-      <Photos />
+      {/* <Photos /> */}
       <Featured />
       <Contact />
     </>

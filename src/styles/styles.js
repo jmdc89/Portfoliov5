@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+// import { css } from "styled-components";
 
 export const setColor = {
   primaryColor: "#af9a7d",

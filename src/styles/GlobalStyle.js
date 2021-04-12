@@ -1,9 +1,7 @@
 import { createGlobalStyle } from "styled-components";
-import { setColor, setFont } from "./styles";
+import { setFont } from "./styles";
 
 const Globals = createGlobalStyle`
-
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
     :root {
         --dark-navy: #020c1b;
@@ -95,7 +93,7 @@ const Globals = createGlobalStyle`
     background-color: var(--navy);
     color: var(--slate);
     /* font-family: var(--font-sans); */
-    ${setFont.main};
+    font-family: 'Roboto', sans-serif;
     font-size: var(--fz-xl);
     line-height: 1.3;
 

@@ -23,5 +23,14 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto\:300,400`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
   ],
 };
