@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 import { navLinks } from "../config";
+import resume from "../images/resume.pdf";
 
 const StyledHeader = styled.header`
   display: flex;
@@ -109,7 +110,7 @@ const Nav = () => {
           </ol>
 
           <div>
-            <a className="resume-button" href="/resume.pdf" target="_blank">
+            <a className="resume-button" href={resume} target="_blank">
               Resume
             </a>
           </div>
