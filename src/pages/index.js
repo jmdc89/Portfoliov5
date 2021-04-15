@@ -7,7 +7,7 @@ import About from "../components/sections/about";
 // import Photos from "../components/sections/photos";
 import Featured from "../components/sections/featured";
 import Contact from "../components/sections/contact";
-// import App from "../components/sections/sf3d";
+import Sfjob from "../components/sections/sfjob";
 
 const IndexPage = () => {
   return (
@@ -17,7 +17,7 @@ const IndexPage = () => {
       <Menu />
       <Hero />
       <About />
-      {/* <App /> */}
+      <Sfjob />
       {/* <Photos /> */}
       <Featured />
       <Contact />
