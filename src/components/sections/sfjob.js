@@ -4,11 +4,15 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 const query = graphql`
   {
-    sfPhotos: allFile(filter: { relativeDirectory: { eq: "sf" } }) {
+    sfPhotos: allFile(
+      filter: { relativeDirectory: { eq: "sf" } }
+      sort: { fields: name }
+    ) {
       nodes {
+        id
         name
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH, quality: 10)
+          gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
         }
       }
     }
@@ -24,7 +28,11 @@ const Sfjob = () => {
       <h1>photo</h1>
       <h2>bye</h2>
       {data.sfPhotos.nodes.map((image) => (
-        <GatsbyImage image={image.childImageSharp.gatsbyImageData} />
+        <GatsbyImage
+          key={image.id}
+          image={image.childImageSharp.gatsbyImageData}
+          alt={image.name.split(".")[1].split("-").join(" ")}
+        />
       ))}
     </>
   );
