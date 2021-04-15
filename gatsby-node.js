@@ -9,7 +9,7 @@ exports.onCreateWebpackConfig = ({
     module: {
       rules: [
         {
-          test: /\.gltf$/,
+          test: /\.glb$/,
           use: [`url-loader`],
         },
       ],
