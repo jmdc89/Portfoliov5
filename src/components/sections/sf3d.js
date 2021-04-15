@@ -1,4 +1,8 @@
 import React from "react";
+import { Canvas } from "react-three-fiber";
+import Tower from "../models/Torrecompress";
+import Controls from "../models/controls";
+import GLTF from "../models/torrecompress.glb";
 
 const Sf3d = () => {
   return (
