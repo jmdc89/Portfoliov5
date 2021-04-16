@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 
 const query = graphql`
   {
@@ -20,8 +21,22 @@ const query = graphql`
 `;
 
 const Sfjob = () => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
+
   const data = useStaticQuery(query);
-  console.log(data);
 
   return (
     <>
