@@ -314,6 +314,29 @@ const NumberedHeading = styled.h2`
   }
 `;
 
+const StyledButton = styled.a`
+  color: var(--green);
+  background-color: transparent;
+  border: 1px solid var(--green);
+  border-radius: var(--border-radius);
+  padding: 0.75rem 1rem;
+  font-size: var(--fz-xs);
+  line-height: 1;
+  cursor: pointer;
+  transition: var(--transition);
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--green-tint);
+    outline: none;
+  }
+  &:after {
+    display: none !important;
+  }
+  margin-left: 15px;
+  font-size: var(--fz-xs);
+`;
+
 const Sfjob = () => {
   return (
     <section id="projects">
@@ -333,8 +356,8 @@ const Sfjob = () => {
               parameterization of the pinnacle of the glory façade, developing
               an algorithm based on the geometric transformations of the only
               model that Gaudi left built in life (Nativity pinnacle). Apart
-              from this task, I was responsible for modify the files and
-              generate the polygonal models for 3d printing.
+              from this task, I was responsible for create the files for 3d
+              printing.
             </p>
 
             <ul className="project-tech-list">
@@ -345,19 +368,20 @@ const Sfjob = () => {
           </div>
 
           <div className="project-links">
-            <a
-              aria-label="GitHub Link"
-              href="https://github.com/jmdc89/netflixClone"
+            <StyledButton
+              className="resume-button"
+              href="{resume}"
+              target="_blank"
             >
-              <Icon name="GitHub" />
-            </a>
-            <a
-              aria-label="External Link"
-              className="external"
-              href="https://netflixcloneui.netlify.app/"
+              3d model
+            </StyledButton>
+            <StyledButton
+              className="resume-button"
+              href="{resume}"
+              target="_blank"
             >
-              <Icon name="External" />
-            </a>
+              Images
+            </StyledButton>
           </div>
         </div>
 
