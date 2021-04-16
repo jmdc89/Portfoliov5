@@ -18,7 +18,6 @@ const IndexPage = () => {
       <Hero />
       <About />
       <Sfjob />
-      {/* <Photos /> */}
       <Featured />
       <Contact />
     </>
