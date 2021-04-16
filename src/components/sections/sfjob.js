@@ -316,10 +316,62 @@ const NumberedHeading = styled.h2`
 
 const Sfjob = () => {
   return (
-    <>
-      <h1>hello</h1>
-      <h2>bye</h2>
-    </>
+    <section id="projects">
+      <NumberedHeading>My experience in The Sagrada Familia</NumberedHeading>
+      {/* <StyledProjecstGrid> */}
+      <StyledProject>
+        <div className="project-content">
+          <div>
+            <h3 className="project-title">
+              <a href="https://netflixcloneui.netlify.app/">The pinnacle</a>
+            </h3>
+          </div>
+
+          <div className="project-description">
+            <p>
+              My main contribution to the Sagrada Familia project was the
+              parameterization of the pinnacle of the glory façade, developing
+              an algorithm based on the geometric transformations of the only
+              model that Gaudi left built in life (Nativity pinnacle). Apart
+              from this task, I was responsible for modify the files and
+              generate the polygonal models for 3d printing.
+            </p>
+
+            <ul className="project-tech-list">
+              <li>Rhinoceros3D</li>
+              <li>Grasshopper</li>
+              <li>3d printing</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            <a
+              aria-label="GitHub Link"
+              href="https://github.com/jmdc89/netflixClone"
+            >
+              <Icon name="GitHub" />
+            </a>
+            <a
+              aria-label="External Link"
+              className="external"
+              href="https://netflixcloneui.netlify.app/"
+            >
+              <Icon name="External" />
+            </a>
+          </div>
+        </div>
+
+        <div className="project-image">
+          <a>
+            <StaticImage
+              src="../../images/sf/img1.Pinnacle-project.JPG"
+              alt="Image 1"
+              className="img"
+            />
+          </a>
+        </div>
+      </StyledProject>
+    </section>
   );
 };
 
