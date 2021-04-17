@@ -23,10 +23,16 @@ const ImageGrid = styled.div`
   padding: 0 32px;
   width: 100%;
 
+  img {
+    filter: sepia(100%);
+    -webkit-filter: sepia(1);
+    -ms-filter: sepia(100%);
+  }
+
   img:hover {
     transform: scale(1.1);
     transition: 0.6s all ease !important;
-    cursour: pointer;
+    filter: none;
   }
 `;
 
