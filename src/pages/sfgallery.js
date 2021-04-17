@@ -11,12 +11,15 @@ const ImageContainer = styled.div`
   h1 {
     margin-bottom: 64px;
   }
+  h2 {
+    margin-bottom: 30px;
+  }
 `;
 
 const ImageGrid = styled.div`
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-auto-rows: minmax(50px, auto);
   margin: 0 auto;
   max-width: 1000px;
@@ -24,9 +27,9 @@ const ImageGrid = styled.div`
   width: 100%;
 
   img {
-    filter: sepia(100%);
-    -webkit-filter: sepia(1);
-    -ms-filter: sepia(100%);
+    filter: sepia(50%);
+    -webkit-filter: sepia(0.5);
+    -ms-filter: sepia(50%);
   }
 
   img:hover {
@@ -60,7 +63,8 @@ const Sfjob = () => {
     <>
       <Globals />
       <ImageContainer>
-        <h1>Gallery - Sagrada Familia</h1>
+        <h1>Sagrada Familia</h1>
+        <h2>Gallery</h2>
         <ImageGrid>
           {data.sfPhotos.nodes.map((image, index) => (
             <GatsbyImage

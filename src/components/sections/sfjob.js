@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../components/icons";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link as GatsbyLink } from "gatsby";
 
 const StyledProject = styled.li`
   position: relative;
@@ -352,12 +353,11 @@ const Sfjob = () => {
 
           <div className="project-description">
             <p>
-              My main contribution to the Sagrada Familia project was the
-              parameterization of the pinnacle of the glory façade, developing
-              an algorithm based on the geometric transformations of the only
-              model that Gaudi left built in life (Nativity pinnacle). Apart
-              from this task, I was responsible for create the files for 3d
-              printing.
+              My main contribution to the Gaudi masterpiece was to develop an
+              algorithm based on the geometric transformations of the only model
+              that Gaudi left built in life (Nativity pinnacle), in order to
+              model the pinnacle of the glory façade. Apart from this task, I
+              was responsible for create the files for 3d printing.
             </p>
 
             <ul className="project-tech-list">
@@ -380,7 +380,7 @@ const Sfjob = () => {
               href="{resume}"
               target="_blank"
             >
-              Images
+              <GatsbyLink to="/sfgallery">Images</GatsbyLink>
             </StyledButton>
           </div>
         </div>

@@ -310,7 +310,7 @@ const NumberedHeading = styled.h2`
     position: relative;
     bottom: 4px;
     /* counter-increment: section; */
-    content: "02.";
+    content: "03.";
     margin-right: 10px;
     color: var(--green);
     font-family: var(--font-mono);
@@ -327,7 +327,7 @@ const NumberedHeading = styled.h2`
 const Featured = () => {
   return (
     <section id="projects">
-      <NumberedHeading>Some Things I’ve Built</NumberedHeading>
+      <NumberedHeading>Web Development Projects</NumberedHeading>
       {/* <StyledProjecstGrid> */}
       <StyledProject>
         <div className="project-content">

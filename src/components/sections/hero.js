@@ -12,6 +12,7 @@ const StyledHeroSection = styled.section`
   align-items: flex-start;
   min-height: 100vh;
   padding: 0;
+  padding-top: 70px;
 
   @media (max-width: 900px) {
     padding-bottom: 10vh;
@@ -79,7 +80,7 @@ const Hero = () => {
         <h1>Hi. my name is</h1>
         <h2>Jose M. Dominguez</h2>
         <h3 className="big-heading">
-          First I drink coffee, then I build things.
+          I am basically a pretty good autodidact.
         </h3>
         <p>
           I'm a Spain-based architect and software developer with 10 years of
