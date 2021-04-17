@@ -346,7 +346,7 @@ const Sfjob = () => {
         <div className="project-content">
           <div>
             <h3 className="project-title">
-              <a href="https://netflixcloneui.netlify.app/">The pinnacle</a>
+              <a href="https://pinnacle3d.netlify.app/">The pinnacle</a>
             </h3>
           </div>
 
@@ -370,7 +370,7 @@ const Sfjob = () => {
           <div className="project-links">
             <StyledButton
               className="resume-button"
-              href="{resume}"
+              href="https://pinnacle3d.netlify.app/"
               target="_blank"
             >
               3d model
