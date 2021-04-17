@@ -347,7 +347,7 @@ const Sfjob = () => {
         <div className="project-content">
           <div>
             <h3 className="project-title">
-              <a href="https://pinnacle3d.netlify.app/">The pinnacle</a>
+              <a href="https://pinnacle3d.netlify.app/">The Gaudi tower</a>
             </h3>
           </div>
 
