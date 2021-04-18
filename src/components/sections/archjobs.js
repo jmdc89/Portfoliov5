@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Icon } from "../../components/icons";
+import { Icon } from "../icons";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link as GatsbyLink } from "gatsby";
 
@@ -340,7 +340,7 @@ const StyledButton = styled.a`
   font-size: var(--fz-xs);
 `;
 
-const Bamboojob = () => {
+const Archjob = () => {
   return (
     <section id="projects">
       <NumberedHeading>Architecture projects</NumberedHeading>
@@ -355,15 +355,15 @@ const Bamboojob = () => {
 
           <div className="project-description">
             <p>
-              During my stay in Brazil and Mexico I had the opportunity to work
-              with this incredible material, having the possibility of
-              experimenting with different constructive and design solutions.
+              During my stay in Brazil and Mexico had the opportunity to work
+              with this incredible material, experimenting with different
+              constructive and design solutions.
             </p>
 
             <ul className="project-tech-list">
               <li>Rhinoceros3D</li>
               <li>Grasshopper</li>
-              <li>3d printing</li>
+              <li>SAP 2000</li>
             </ul>
           </div>
 
@@ -399,4 +399,4 @@ const Bamboojob = () => {
   );
 };
 
-export default Bamboojob;
+export default Archjob;

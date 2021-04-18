@@ -8,7 +8,7 @@ import About from "../components/sections/about";
 import Featured from "../components/sections/featured";
 import Contact from "../components/sections/contact";
 import Sfjob from "../components/sections/sfjob";
-import Bamboojob from "../components/sections/bamboojob";
+import Archjob from "../components/sections/archjobs";
 
 const IndexPage = () => {
   return (
@@ -19,7 +19,7 @@ const IndexPage = () => {
       <Hero />
       <About />
       <Sfjob />
-      <Bamboojob />
+      <Archjob />
       <Featured />
       <Contact />
     </>
