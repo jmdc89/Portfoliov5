@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { email } from "../../config";
 
 const StyledHeroSection = styled.section`
-  margin: 0px auto;
+  margin: 0 auto;
   max-width: 1000px;
   display: flex;
   justify-content: center;
@@ -11,13 +11,13 @@ const StyledHeroSection = styled.section`
   flex-direction: column;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 0;
-  padding-top: 70px;
+  /* padding: 0; */
 
   @media (max-width: 900px) {
-    padding-bottom: 10vh;
-    max-width: 80vw;
+    /* padding-bottom: 10vh; */
+    /* max-width: 90vw; */
     margin-left: 10vw;
+    /* max-height: 100vh; */
   }
 
   h1 {
@@ -78,10 +78,10 @@ const Hero = () => {
     <>
       <StyledHeroSection>
         <h1>Hi. my name is</h1>
-        <h2>Jose M. Dominguez</h2>
-        <h3 className="big-heading">
+        <h2>Jose Cascajosa.</h2>
+        {/* <h3 className="big-heading">
           I am basically a pretty good autodidact.
-        </h3>
+        </h3> */}
         <p>
           I'm a Spain-based architect and software developer with 10 years of
           experience in digital fabrication, parametric modeling and complex

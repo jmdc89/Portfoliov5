@@ -219,6 +219,7 @@ const Globals = createGlobalStyle`
     width: 100%;
     font-size: clamp(26px, 5vw, var(--fz-heading));
     white-space: nowrap;
+    margin-left:10px;
 
     &:before {
       position: relative;

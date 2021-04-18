@@ -302,9 +302,10 @@ const NumberedHeading = styled.h2`
   align-items: center;
   position: relative;
   margin: 10px 0 40px;
-  width: 100%;
+  margin-bottom: 40px;
   font-size: clamp(26px, 5vw, var(--fz-heading));
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  margin-left: 10px;
 
   &:before {
     position: relative;
@@ -314,12 +315,13 @@ const NumberedHeading = styled.h2`
     margin-right: 10px;
     color: var(--green);
     font-family: var(--font-mono);
-    font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+    font-size: clamp(var(--fz-lg), 10vw, var(--fz-xl));
     font-weight: 400;
 
     @media (max-width: 480px) {
       margin-bottom: -3px;
       margin-right: 5px;
+      max-width: 80vw;
     }
   }
 `;
