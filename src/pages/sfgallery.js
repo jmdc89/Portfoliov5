@@ -23,7 +23,7 @@ const ImageGrid = styled.div`
   grid-auto-rows: minmax(50px, auto);
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 32px;
+  /* padding: 0 32px; */
   width: 100%;
 
   @media (max-width: 480px) {
@@ -32,7 +32,7 @@ const ImageGrid = styled.div`
     }
   }
 
-  img {
+  /* img {
     filter: sepia(70%);
     -webkit-filter: sepia(0.7);
     -ms-filter: sepia(70%);
@@ -42,7 +42,7 @@ const ImageGrid = styled.div`
     transform: scale(1.1);
     transition: 0.6s all ease !important;
     filter: none;
-  }
+  } */
 `;
 
 const query = graphql`
@@ -70,7 +70,7 @@ const Sfjob = () => {
       <Globals />
       <ImageContainer>
         <h1>Sagrada Familia</h1>
-        <h2>Gallery</h2>
+        {/* <h2>Gallery</h2> */}
         <ImageGrid>
           {data.sfPhotos.nodes.map((image, index) => (
             <GatsbyImage

@@ -52,7 +52,7 @@ const HytasaLab = () => {
       <Globals />
       <ImageContainer>
         <h1>HytasaLab</h1>
-        <h2>Gallery</h2>
+        {/* <h2>Gallery</h2> */}
         <ImageGrid>
           {data.sfPhotos.nodes.map((image, index) => (
             <GatsbyImage
