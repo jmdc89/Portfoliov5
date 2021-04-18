@@ -302,7 +302,7 @@ const NumberedHeading = styled.h2`
     position: relative;
     bottom: 4px;
     /* counter-increment: section; */
-    content: "02.";
+    content: "03.";
     margin-right: 10px;
     color: var(--green);
     font-family: var(--font-mono);
@@ -340,26 +340,24 @@ const StyledButton = styled.a`
   font-size: var(--fz-xs);
 `;
 
-const Sfjob = () => {
+const Bamboojob = () => {
   return (
     <section id="projects">
-      <NumberedHeading>Working at The Sagrada Familia</NumberedHeading>
+      <NumberedHeading>Architecture projects</NumberedHeading>
       {/* <StyledProjecstGrid> */}
       <StyledProject>
         <div className="project-content">
           <div>
             <h3 className="project-title">
-              <a href="https://pinnacle3d.netlify.app/">The parametric tower</a>
+              <a href="https://pinnacle3d.netlify.app/">Bamboo Structures</a>
             </h3>
           </div>
 
           <div className="project-description">
             <p>
-              My main contribution to the Gaudi Temple was to develop an
-              algorithm based on the geometric transformations of the only model
-              that Gaudi left built in life (Nativity pinnacle), in order to
-              model the pinnacle of the glory façade. Apart from this task, I
-              was responsible for create the files for 3d printing.
+              During my stay in Brazil and Mexico I had the opportunity to work
+              with this incredible material, having the possibility of
+              experimenting with different constructive and design solutions.
             </p>
 
             <ul className="project-tech-list">
@@ -370,19 +368,19 @@ const Sfjob = () => {
           </div>
 
           <div className="project-links">
-            <StyledButton
+            {/* <StyledButton
               className="resume-button"
               href="https://pinnacle3d.netlify.app/"
               target="_blank"
             >
               3d model
-            </StyledButton>
+            </StyledButton> */}
             <StyledButton
               className="resume-button"
               href="{resume}"
               target="_blank"
             >
-              <GatsbyLink to="/sfgallery">Images</GatsbyLink>
+              <GatsbyLink to="/bamboogallery">Images</GatsbyLink>
             </StyledButton>
           </div>
         </div>
@@ -390,7 +388,7 @@ const Sfjob = () => {
         <div className="project-image">
           <a>
             <StaticImage
-              src="../../images/sf/img1.Pinnacle-project.JPG"
+              src="../../images/bamboo/img01.Spiral-structure.jpg"
               alt="Image 1"
               className="img"
             />
@@ -401,4 +399,4 @@ const Sfjob = () => {
   );
 };
 
-export default Sfjob;
+export default Bamboojob;

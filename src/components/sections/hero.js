@@ -78,7 +78,7 @@ const Hero = () => {
     <>
       <StyledHeroSection>
         <h1>Hi. my name is</h1>
-        <h2>Jose Cascajosa.</h2>
+        <h2>Jose Manuel Dominguez.</h2>
         {/* <h3 className="big-heading">
           I am basically a pretty good autodidact.
         </h3> */}

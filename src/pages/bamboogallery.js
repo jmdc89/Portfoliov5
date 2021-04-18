@@ -48,7 +48,7 @@ const ImageGrid = styled.div`
 const query = graphql`
   {
     sfPhotos: allFile(
-      filter: { relativeDirectory: { eq: "sf" } }
+      filter: { relativeDirectory: { eq: "bamboo" } }
       sort: { fields: name }
     ) {
       nodes {
@@ -69,7 +69,7 @@ const Sfjob = () => {
     <>
       <Globals />
       <ImageContainer>
-        <h1>Sagrada Familia</h1>
+        <h1>Bamboo structures</h1>
         <h2>Gallery</h2>
         <ImageGrid>
           {data.sfPhotos.nodes.map((image, index) => (

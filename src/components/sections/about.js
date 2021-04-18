@@ -124,10 +124,9 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Jose Manuel Dominguez. My interest in web
-              development started in 2020 after 8 years of professional
-              experience coding generative algorithms to control and produce
-              complex geometry.
+              My interest in web development started in 2020 after 8 years of
+              professional experience in research, digital fabrication and
+              coding generative algorithms to control complex geometry.
             </p>
 
             <p>
