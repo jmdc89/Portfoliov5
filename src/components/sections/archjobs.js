@@ -349,7 +349,7 @@ const Archjob = () => {
         <div className="project-content">
           <div>
             <h3 className="project-title">
-              <a href="https://pinnacle3d.netlify.app/">Bamboo Structures</a>
+              <a>Bamboo Structures</a>
             </h3>
           </div>
 
@@ -390,6 +390,61 @@ const Archjob = () => {
             <StaticImage
               src="../../images/bamboo/img01.Spiral-structure.jpg"
               alt="Image 1"
+              className="img"
+            />
+          </a>
+        </div>
+      </StyledProject>
+
+      <StyledProject>
+        <div className="project-content">
+          <div>
+            <h3 className="project-title">
+              <a>The Wu Project</a>
+            </h3>
+          </div>
+
+          <div className="project-description">
+            <p>
+              “Wu” is the result of an immersive experience based on the
+              perspective of who interacts with it. Thus, it remains unfinished,
+              unfolding through its own processes. Composed by an audiovisual
+              intervention submersed throughout a geodesic structure, its
+              dynamics converges, connects and reverberates all inner and outer
+              influences.
+            </p>
+
+            <ul className="project-tech-list">
+              <li>Rhinoceros3D</li>
+              <li>Grasshopper</li>
+              <li>Laser Cut</li>
+              <li>Arduino</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            {/* <StyledButton
+              className="resume-button"
+              href="https://pinnacle3d.netlify.app/"
+              target="_blank"
+            >
+              3d model
+            </StyledButton> */}
+            <StyledButton
+              className="resume-button"
+              href="{resume}"
+              target="_blank"
+            >
+              <GatsbyLink to="/wugallery">Images</GatsbyLink>
+            </StyledButton>
+          </div>
+        </div>
+
+        <div className="project-image">
+          <a>
+            <StaticImage
+              src="../../images/ProjetoWu/img01.Projeto-Wu.jpg"
+              alt="Projeto Wu"
               className="img"
             />
           </a>
