@@ -26,10 +26,16 @@ const ImageGrid = styled.div`
   padding: 0 32px;
   width: 100%;
 
+  @media (max-width: 480px) {
+    img {
+      max-width: 80vw;
+    }
+  }
+
   img {
-    filter: sepia(50%);
-    -webkit-filter: sepia(0.5);
-    -ms-filter: sepia(50%);
+    filter: sepia(70%);
+    -webkit-filter: sepia(0.7);
+    -ms-filter: sepia(70%);
   }
 
   img:hover {
