@@ -509,7 +509,7 @@ const Archjob = () => {
 
           <div className="project-description">
             <p>
-              This my degree completion project, it is an intervention in an
+              This is my degree completion project, an intervention in an
               existing industrial warehouse with interesting characteristics,
               both formal and historical. The built space of co-creation is
               concentrated to release the rest to ephemeral construction through
