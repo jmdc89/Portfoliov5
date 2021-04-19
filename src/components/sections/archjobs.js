@@ -450,6 +450,105 @@ const Archjob = () => {
           </a>
         </div>
       </StyledProject>
+
+      <StyledProject>
+        <div className="project-content">
+          <div>
+            <h3 className="project-title">
+              <a>Casacor 2019</a>
+            </h3>
+          </div>
+
+          <div className="project-description">
+            <p>
+              In this collaboration with the architecture studio "Daniela
+              Conalghi" for the Casacor design event held in Sao Paulo, we made
+              an organic surface that fuses walls and ceiling through generative
+              design and digital manufacturing (CNC).
+            </p>
+
+            <ul className="project-tech-list">
+              <li>Rhinoceros3D</li>
+              <li>Grasshopper</li>
+              <li>CNC</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            {/* <StyledButton
+              className="resume-button"
+              href="https://pinnacle3d.netlify.app/"
+              target="_blank"
+            >
+              3d model
+            </StyledButton> */}
+            <StyledButton className="resume-button" target="_blank">
+              <GatsbyLink to="/casacorgallery">Images</GatsbyLink>
+            </StyledButton>
+          </div>
+        </div>
+
+        <div className="project-image">
+          <a>
+            <StaticImage
+              src="../../images/casacor/img01.Casacor.jpeg"
+              alt="Projeto Wu"
+              className="img"
+            />
+          </a>
+        </div>
+      </StyledProject>
+
+      <StyledProject>
+        <div className="project-content">
+          <div>
+            <h3 className="project-title">
+              <a>Hytasa-Lab</a>
+            </h3>
+          </div>
+
+          <div className="project-description">
+            <p>
+              This my degree completion project, it is an intervention in an
+              existing industrial warehouse with interesting characteristics,
+              both formal and historical. The built space of co-creation is
+              concentrated to release the rest to ephemeral construction through
+              the use of robots and digital manufacturing.
+            </p>
+
+            <ul className="project-tech-list">
+              <li>Rhinoceros3D</li>
+              <li>Grasshopper</li>
+              <li>Vray</li>
+              <li>Adobe Illustrator</li>
+              <li>Laser Cut</li>
+            </ul>
+          </div>
+
+          <div className="project-links">
+            <StyledButton
+              className="resume-button"
+              href="https://idus.us.es/handle/11441/37531"
+              target="_blank"
+            >
+              Original files
+            </StyledButton>
+            <StyledButton className="resume-button" target="_blank">
+              <GatsbyLink to="/hytasalabgallery">Images</GatsbyLink>
+            </StyledButton>
+          </div>
+        </div>
+
+        <div className="project-image">
+          <a>
+            <StaticImage
+              src="../../images/HytasaLab/img01.HytasaLab.PNG"
+              alt="Projeto Wu"
+              className="img"
+            />
+          </a>
+        </div>
+      </StyledProject>
     </section>
   );
 };
