@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Icon } from "../../components/icons";
 import { StaticImage } from "gatsby-plugin-image";
 import { Link as GatsbyLink } from "gatsby";
 
