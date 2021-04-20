@@ -83,10 +83,10 @@ const Hero = () => {
           I am basically a pretty good autodidact.
         </h3> */}
         <p>
-          I'm a Spain-based architect and software developer with 10 years of
-          experience in digital fabrication, parametric modeling and complex
-          geometry. Currently, I´m focused on designing and building exceptional
-          digital experiences.
+          I'm a Spain-based (open to relocation on a global level) architect and
+          software developer with 10 years of experience in digital fabrication,
+          parametric modeling and complex geometry. Currently, I´m focused on
+          designing and building exceptional digital experiences.
         </p>
         <a href={`mailto:${email}`} className="email-link">
           Get In Touch

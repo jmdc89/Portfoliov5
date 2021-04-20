@@ -10,6 +10,7 @@ import Contact from "../components/sections/contact";
 import Sfjob from "../components/sections/sfjob";
 import Archjob from "../components/sections/archjobs";
 import Prosteticjob from "../components/sections/prosteticjob";
+import Dfabjob from "../components/sections/dfjob";
 
 const IndexPage = () => {
   return (
@@ -22,6 +23,7 @@ const IndexPage = () => {
       <Sfjob />
       <Archjob />
       <Prosteticjob />
+      <Dfabjob />
       <Featured />
       <Contact />
     </>

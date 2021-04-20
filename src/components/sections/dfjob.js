@@ -339,16 +339,16 @@ const StyledButton = styled.a`
   font-size: var(--fz-xs);
 `;
 
-const Prosteticjob = () => {
+const Dfabjob = () => {
   return (
     <section id="projects">
-      <NumberedHeading>Geometry in nature</NumberedHeading>
+      <NumberedHeading>Digital fabrication</NumberedHeading>
       {/* <StyledProjecstGrid> */}
       <StyledProject>
         <div className="project-content">
           <div>
             <h3 className="project-title">
-              <a>Cranial implant</a>
+              <a>Advanced prototyping</a>
             </h3>
           </div>
 
@@ -383,7 +383,7 @@ const Prosteticjob = () => {
               href="{resume}"
               target="_blank"
             >
-              <GatsbyLink to="/cranialgallery">Images</GatsbyLink>
+              <GatsbyLink to="/dfgallery">Images</GatsbyLink>
             </StyledButton>
           </div>
         </div>
@@ -391,7 +391,7 @@ const Prosteticjob = () => {
         <div className="project-image">
           <a>
             <StaticImage
-              src="../../images/cranial/img01.cranial-implant.png"
+              src="../../images/digitalfabrication/img02.Sound-surface.jpg"
               alt="Cranial implant"
               className="img"
             />
@@ -403,17 +403,17 @@ const Prosteticjob = () => {
         <div className="project-content">
           <div>
             <h3 className="project-title">
-              <a>3dPrinted toucan beak</a>
+              <a>Architecture models</a>
             </h3>
           </div>
 
           <div className="project-description">
             <p>
               in this case the patient was not a human, but a toucan from the
-              Bauru zoo (Sao Paulo). As the original beak was too damaged, it
-              was necessary to 3dscan a dissected beak from the same species of
-              toucan as a reference. Photopolymer technology was used for 3d
-              printing.
+              Bauru zoo (Sao Paulo). As the original beak was not available, it
+              was necessary to use the remaining geometry and a dissected beak
+              from the same species of toucan as a reference. Photopolymer
+              technology was used for 3d printing.
             </p>
 
             <ul className="project-tech-list">
@@ -432,7 +432,7 @@ const Prosteticjob = () => {
               3d model
             </StyledButton> */}
             <StyledButton className="resume-button" target="_blank">
-              <GatsbyLink to="/toucangallery">Images</GatsbyLink>
+              <GatsbyLink to="/modelsgallery">Images</GatsbyLink>
             </StyledButton>
           </div>
         </div>
@@ -440,7 +440,7 @@ const Prosteticjob = () => {
         <div className="project-image">
           <a>
             <StaticImage
-              src="../../images/beak/img01.beak.png"
+              src="../../images/maquetas/img04.Casa-Represa.png"
               alt="Toucan beak"
               className="img"
             />
@@ -451,4 +451,4 @@ const Prosteticjob = () => {
   );
 };
 
-export default Prosteticjob;
+export default Dfabjob;

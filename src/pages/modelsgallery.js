@@ -62,7 +62,7 @@ const query = graphql`
   }
 `;
 
-const Dfjob = () => {
+const Modelsjob = () => {
   const data = useStaticQuery(query);
 
   return (
@@ -86,4 +86,4 @@ const Dfjob = () => {
   );
 };
 
-export default Dfjob;
+export default Modelsjob;
