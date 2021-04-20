@@ -354,19 +354,20 @@ const Dfabjob = () => {
 
           <div className="project-description">
             <p>
-              During my stay as a researcher at CADEP, we helped a patient who,
-              after a traffic accident, had lost the front part of the skull. To
-              complete the missing geometry, it was necessary to use different
-              digital fabrication technologies, as well as reconstruct the
-              geometry through tomography data.
+              During my 6 years as a researcher at Center for Advanced Product
+              Development (Brazil), had the opportunity to work with all kinds
+              of digital manufacturing technology (additive, subtractive, 3D
+              scanning, etc.), both in the creation of files and in the
+              manipulation of the machines.
             </p>
 
             <ul className="project-tech-list">
-              <li>Rhinoceros/Grasshopper3D</li>
-              <li>Invesalius</li>
-              <li>3d Scan</li>
-              <li>3d printing</li>
-              <li>CNC</li>
+              <li>Gom Atos 3D scanner system</li>
+              <li>Zprinter 650</li>
+              <li>Zbuilder ultra</li>
+              <li>CNC Roland DX</li>
+              <li>Router CNC 3D Transform</li>
+              <li>Lasercut Ecnc</li>
             </ul>
           </div>
 
@@ -409,17 +410,18 @@ const Dfabjob = () => {
 
           <div className="project-description">
             <p>
-              in this case the patient was not a human, but a toucan from the
-              Bauru zoo (Sao Paulo). As the original beak was not available, it
-              was necessary to use the remaining geometry and a dissected beak
-              from the same species of toucan as a reference. Photopolymer
-              technology was used for 3d printing.
+              In my collaboration with Lynk3D(Bauru) I have worked together with
+              different architecture studios to design and manufacture
+              architecture models, using all kinds of digital manufacturing
+              technology (additive and subtractive).
             </p>
 
             <ul className="project-tech-list">
               <li>Rhinoceros/Grasshopper3D</li>
-              <li>3d Scan</li>
+              <li>Autodesk Fusion 360</li>
               <li>3d printing</li>
+              <li>CNC</li>
+              <li>Laser Cut</li>
             </ul>
           </div>
 
