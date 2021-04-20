@@ -19,11 +19,11 @@ const StyledHeader = styled.header`
   @media (max-width: 1080px) {
     padding: 0 40px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     padding: 0 25px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `;
@@ -38,7 +38,7 @@ const StyledLinks = styled.div`
   display: flex;
   float: right;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: none;
   }
 
@@ -110,7 +110,12 @@ const Nav = () => {
           </ol>
 
           <div>
-            <a className="resume-button" href={resume} target="_blank">
+            <a
+              className="resume-button"
+              href={resume}
+              target="_blank"
+              rel="noreferrer"
+            >
               Resume
             </a>
           </div>

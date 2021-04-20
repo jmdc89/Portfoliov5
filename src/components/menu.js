@@ -6,14 +6,14 @@ import resume from "../images/resume.pdf";
 
 const StyledMenu = styled.div`
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: block;
   }
 `;
 
 const StyledHamburgerButton = styled.button`
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,7 +88,7 @@ const StyledHamburgerButton = styled.button`
 
 const StyledSidebar = styled.aside`
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: flex;
     justify-content: center;
     align-items: center;
