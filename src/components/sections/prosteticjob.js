@@ -341,7 +341,7 @@ const StyledButton = styled.a`
 
 const Prosteticjob = () => {
   return (
-    <section id="projects">
+    <section id="prosthetic">
       <NumberedHeading>Geometry in nature</NumberedHeading>
       {/* <StyledProjecstGrid> */}
       <StyledProject>

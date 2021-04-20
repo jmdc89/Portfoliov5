@@ -22,14 +22,34 @@ module.exports = {
     //   name: "Experience",
     //   url: "/#jobs",
     // },
-    {
-      name: "Work",
-      url: "/#projects",
-    },
+    // {
+    //   name: "Work",
+    //   url: "/#projects",
+    // },
     // {
     //   name: "Courses",
     //   url: "/#courses",
     // },
+    {
+      name: "Sagrada Familia",
+      url: "/#sagradafamilia",
+    },
+    {
+      name: "Architecture",
+      url: "/#architecture",
+    },
+    {
+      name: "Prosthetic",
+      url: "/#prosthetic",
+    },
+    {
+      name: "Digital Fabrication",
+      url: "/#digitalfabrication",
+    },
+    {
+      name: "Web Development",
+      url: "/#webdevelopment",
+    },
     {
       name: "Contact",
       url: "/#contact",

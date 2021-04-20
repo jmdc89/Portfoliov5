@@ -341,7 +341,7 @@ const StyledButton = styled.a`
 
 const Sfjob = () => {
   return (
-    <section id="projects">
+    <section id="sagradafamilia">
       <NumberedHeading>Working at The Sagrada Familia</NumberedHeading>
       {/* <StyledProjecstGrid> */}
       <StyledProject>

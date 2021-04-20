@@ -328,7 +328,7 @@ const NumberedHeading = styled.h2`
 
 const Featured = () => {
   return (
-    <section id="projects">
+    <section id="webdevelopment">
       <NumberedHeading>Web Development Projects</NumberedHeading>
       {/* <StyledProjecstGrid> */}
       <StyledProject>

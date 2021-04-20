@@ -341,7 +341,7 @@ const StyledButton = styled.a`
 
 const Dfabjob = () => {
   return (
-    <section id="projects">
+    <section id="digitalfabrication">
       <NumberedHeading>Digital fabrication</NumberedHeading>
       {/* <StyledProjecstGrid> */}
       <StyledProject>

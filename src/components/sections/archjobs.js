@@ -342,7 +342,7 @@ const StyledButton = styled.a`
 
 const Archjob = () => {
   return (
-    <section id="projects">
+    <section id="architecture">
       <NumberedHeading>Architecture projects</NumberedHeading>
       {/* <StyledProjecstGrid> */}
       <StyledProject>
